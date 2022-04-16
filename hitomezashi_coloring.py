@@ -282,7 +282,7 @@ def drawByPyplot(color_field, decoded_colors, preferred_colors, save):
     if save:
         random_stuff = str(hex(randint(0, 18446744073709551615))[2:])
         random_stuff = '0' * (16 - len(random_stuff)) + random_stuff
-        strname = f"Hitomezashi_{color_field.shape[0]}x{color_field.shape[1]}_{','.join(preferred_colors)}_{random_stuff}.png"
+        strname = f"images\\Hitomezashi_{color_field.shape[0]}x{color_field.shape[1]}_{','.join(preferred_colors)}_{random_stuff}.png"
         plt.savefig(strname)
 
 def HitomezashiColoring(X, Y, preferred_colors, save=True, twocolors=False, thue_morse=False):
